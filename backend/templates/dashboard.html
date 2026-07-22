@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Screening Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+
+<nav>
+
+    <a href="/">🏠 Home</a>
+
+    <a href="/upload_page">📄 Upload Resume</a>
+
+    <a href="/history_page">📜 History</a>
+
+    <a href="/dashboard">Dashboard</a>
+
+    <a href="/logout">🚪 Logout</a>
+
+</nav>
+
+
+<div class="container">
+
+    <h1>📊 AI Resume Screening Dashboard</h1>
+
+    <!-- Dashboard Cards -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2 id="totalResume">0</h2>
+
+            <p>Total Resumes</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2 id="avgScore">0</h2>
+
+            <p>Average ATS Score</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2 id="highestScore">0</h2>
+
+            <p>Highest ATS Score</p>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- Recent Uploads -->
+
+    <h2>📂 Recent Resume Uploads</h2>
+
+    <table id="recentTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Candidate Name</th>
+
+                <th>ATS Score</th>
+
+                <th>Upload Date</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+    <br><br>
+
+    <!-- Analytics Chart -->
+
+    <div class="chart-container">
+
+        <h2>📈 ATS Score Analytics</h2>
+
+        <canvas id="scoreChart" height="100"></canvas>
+
+    </div>
+
+</div>
+
+<!-- Chart.js -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Dashboard JS -->
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+</body>
+
+</html>

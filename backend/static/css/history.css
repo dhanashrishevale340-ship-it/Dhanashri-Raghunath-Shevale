@@ -1,0 +1,142 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 40px auto;
+}
+
+h1{
+    color: #2563eb;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+th{
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+}
+
+td{
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:hover{
+    background: #f2f2f2;
+}
+
+#searchInput{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Buttons */
+
+.view-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.view-btn:hover{
+    background:#1d4ed8;
+}
+
+.delete-btn{
+    background:#dc2626;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#b91c1c;
+}
+
+.download-btn{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.download-btn:hover{
+    background:#15803d;
+}
+
+/* ===========================
+   Modal
+=========================== */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+}
+
+.modal-content{
+    background:#fff;
+    width:70%;
+    max-width:750px;
+    margin:50px auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    max-height:80vh;
+    overflow-y:auto;
+}
+
+.modal-content h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.close{
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+    color:#555;
+}
+
+.close:hover{
+    color:red;
+}
+
+.detail{
+    margin:15px 0;
+    line-height:1.7;
+}
+
+.detail strong{
+    color:#2563eb;
+}

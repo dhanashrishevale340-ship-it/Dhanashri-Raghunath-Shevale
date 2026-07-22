@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume History</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/history.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Resume History</h1>
+
+    <div style="margin:20px 0;">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by Name or Email..."
+            onkeyup="searchResume()"
+        >
+
+    </div>
+
+    <table id="historyTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Score</th>
+                <th>Date</th>
+                <th>Action</th>
+                <th>Delete</th>
+                <th>Download</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- ============================= -->
+<!-- Resume Details Modal -->
+<!-- ============================= -->
+
+<div id="resumeModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>Resume Details</h2>
+
+        <div id="resumeDetails"></div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/history.js') }}"></script>
+
+</body>
+
+</html>
