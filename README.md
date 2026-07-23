@@ -145,6 +145,8 @@ If you like this project, don't forget to ⭐ Star the repository.
 
 Email: dhanashrishevale340@gmail.com
 
-LinkedIn: *(Add your LinkedIn profile link here)*
+LinkedIn:www.linkedin.com/in/dhanashri-shevale-7a3872352
+
+
 
 GitHub: https://github.com/dhanashrishevale340-ship-it
